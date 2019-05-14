@@ -30,7 +30,7 @@ Ground truth labels were generated to indicate the movement of future trading pr
 
 The best FFNN has two hidden layers with ReLU as the activation functions. The first hidden layer has 300 neurons and the second layer has 100 neurons. The output layer outputs the logits and then goes through the softmax activation function. The cross entropy is utilized as the loss function and gradient descent optimizer is adopted to train the model. The network takes 400 features as the number of inputs for each instance, and outputs 3 probabilities for each class. The predicted class is determined by the highest probability among the three. During training session, the entire train set was splitted into train and validation sets sequentially at a ratio of 8:2. Specifically, the first 10,935 instances were in the train set while the remaining 2,734 instances were in the validation set. 
 
-<img width="604" alt="tensorboard_graph" src="https://user-images.githubusercontent.com/42804316/57709888-d927fa00-7639-11e9-967e-7ba0e0046907.png"><img width="366" alt="simplified_flowchart" src="https://user-images.githubusercontent.com/42804316/57709910-e1803500-7639-11e9-9d7b-6936507a54b2.png">
+<img width="50%" alt="tensorboard_graph" src="https://user-images.githubusercontent.com/42804316/57709888-d927fa00-7639-11e9-967e-7ba0e0046907.png"><img width="50%" alt="simplified_flowchart" src="https://user-images.githubusercontent.com/42804316/57709910-e1803500-7639-11e9-9d7b-6936507a54b2.png">
 
 **Convolutional Neural Networks (CNN)**
 
