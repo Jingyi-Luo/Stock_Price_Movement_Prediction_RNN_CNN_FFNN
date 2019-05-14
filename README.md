@@ -1,6 +1,6 @@
 # Stock Price Movement Prediction Using FFNN CNN RNN
 
-This project aims to predict the movement of future trading price of Netflix (NFLX) stock using transaction data on January 3, 2017 from the Limit Order Book (LOB). Stationary features were created to overcome autocorrelation and reduce noises of the time series data. For this project, a random forest model was built as baseline and three types of neural network models were develpted and compared: Feed Forward Neural Networks (FFNN), Convolutional Neural Networks (CNN), and Recurrent Neural Networks (RNN).  The models were compared based on not only the accuracy, but also other metrics such as recall and Cohen’s Kappa.
+This project aims to predict the movement of future trading price of Netflix (NFLX) stock using transaction data on January 3, 2017 from the Limit Order Book (LOB). Stationary features were created to overcome autocorrelation and reduce noises of the time series data. For this project, a random forest model was built as baseline and three types of neural network models were develpted and compared: Feed Forward Neural Networks (FFNN), Convolutional Neural Networks (CNN), and Recurrent Neural Networks (RNN).  The models were compared based on not only the accuracy, but also other metrics such as f1-score and Cohen’s Kappa.
 
 ## Data, Feature Engineering and Labelling
 
@@ -26,6 +26,10 @@ Ground truth labels were generated to indicate the movement of future trading pr
 
 ## Architectures of Neural Network Models
 
+**Baseline Model: Random Forest**
+
+Entropy (information gain) was used as the criterion to assess the quality of each split for each tree in the random forest model. The performance of the model was evaluated using average precision, average recall, f1-score and Cohen’s kappa. The hyper parameters were tuned using a grid search, and the optimal model had 300 trees and 30 minimum samples at leaf nodes. 
+
 **Feed Forward Neural Networks (FFNN)**
 
 The best FFNN has two hidden layers with ReLU as the activation functions. The first hidden layer has 300 neurons and the second layer has 100 neurons. The output layer outputs the logits and then goes through the softmax activation function. The cross entropy is utilized as the loss function and adam optimizer is adopted to optimized the parameters (weights and bias) of the model.. The network takes 400 features as the number of inputs for each instance, and outputs 3 probabilities for each class. The predicted class is determined by the highest probability among the three. During training session, the entire train set was splitted into train and validation sets sequentially at a ratio of 8:2. Specifically, the first 10,935 instances were in the train set while the remaining 2,734 instances were in the validation set. 
@@ -46,3 +50,8 @@ The best RNN adopted GRU (gated recurrent units) cell. The number of units for e
 
 ## Results
 
+Figure 4 shows the details of the results for the metrics of random forests. They are based on the weighted averages of the metrics, which takes into consideration of the weights of each class. Figure 5 shows the detailed results for the FFNN trained using a learning rate of 0.0003, a batch size of 64 and 200 epochs with early stopping. 
+
+<img width="418" alt="Fig4_random_forest" src="https://user-images.githubusercontent.com/42804316/57713543-b0efc980-7640-11e9-83ff-2ff3830d3d29.png"><img width="354" alt="Fig5_FFNN" src="https://user-images.githubusercontent.com/42804316/57713568-b8af6e00-7640-11e9-9b57-6fbcd15d525d.png">
+
+ Figure 6 shows the detailed results for the CNN trained using a learning rate 0.001, a batch size of 50 and 10 epochs. Figure 7 shows the detailed results for the RNN trained using a learning rate of 0.001, a batch size of 50 and 10 epochs. 
