@@ -1,6 +1,6 @@
 # Stock Price Movement Prediction Using FFNN CNN RNN
 
-This project aims to predict the movement of future trading price of Netflix (NFLX) stock using transaction data on January 3, 2017 from the Limit Order Book (LOB). Stationary features were created to overcome autocorrelation and reduce noises of the time series data. For this project, a random forest model was built as baseline and three types of neural network models were develpted and compared: Feed Forward Neural Networks (FFNN), Convolutional Neural Networks (CNN), and Recurrent Neural Networks (RNN).  
+This project aims to predict the movement of future trading price of Netflix (NFLX) stock using transaction data on January 3, 2017 from the Limit Order Book (LOB). Stationary features were created to overcome autocorrelation and reduce noises of the time series data. For this project, a random forest model was built as baseline and three types of neural network models were develpted and compared: Feed Forward Neural Networks (FFNN), Convolutional Neural Networks (CNN), and Recurrent Neural Networks (RNN).  The models were compared based on not only the accuracy, but also other metrics such as recall and Cohen’s Kappa.
 
 ## Data, Feature Engineering and Labelling
 
@@ -25,6 +25,18 @@ Ground truth labels were generated to indicate the movement of future trading pr
 <img width="771" alt="table3_labelling" src="https://user-images.githubusercontent.com/42804316/57709292-ba753380-7638-11e9-8c69-c8d09bd5a65c.png">
 
 ## Architectures of Neural Network Models
+
+**Feed Forward Neural Networks (FFNN)**
+
+The best FFNN has two hidden layers with ReLU as the activation functions. The first hidden layer has 300 neurons and the second layer has 100 neurons. The output layer outputs the logits and then goes through the softmax activation function. The cross entropy is utilized as the loss function and gradient descent optimizer is adopted to train the model. The network takes 400 features as the number of inputs for each instance, and outputs 3 probabilities for each class. The predicted class is determined by the highest probability among the three. During training session, the entire train set was splitted into train and validation sets sequentially at a ratio of 8:2. Specifically, the first 10,935 instances were in the train set while the remaining 2,734 instances were in the validation set. 
+
+<img width="604" alt="tensorboard_graph" src="https://user-images.githubusercontent.com/42804316/57709888-d927fa00-7639-11e9-967e-7ba0e0046907.png"><img width="366" alt="simplified_flowchart" src="https://user-images.githubusercontent.com/42804316/57709910-e1803500-7639-11e9-9d7b-6936507a54b2.png">
+
+**Convolutional Neural Networks (CNN)**
+
+
+
+**Recurrent Neural Networks (RNN)**
 
 
 
