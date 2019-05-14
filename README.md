@@ -52,8 +52,8 @@ The best RNN adopted GRU (gated recurrent units) cell. The number of units for e
 
 Figure 4 shows the details of the results for the metrics of random forests. They are based on the weighted averages of the metrics, which takes into consideration of the weights of each class. Figure 5 shows the detailed results for the FFNN trained using a learning rate of 0.0003, a batch size of 64 and 200 epochs with early stopping. 
 
-<img width="380" alt="Fig4_RF" src="https://user-images.githubusercontent.com/42804316/57713902-5f940a00-7641-11e9-8314-e50c97e26243.png"><img width="352" alt="Fig5_FFNN" src="https://user-images.githubusercontent.com/42804316/57713910-63279100-7641-11e9-8816-68e9cca650ec.png">
+<img width="380" alt="Fig4_RF" src="https://user-images.githubusercontent.com/42804316/57713902-5f940a00-7641-11e9-8314-e50c97e26243.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="352" alt="Fig5_FFNN" src="https://user-images.githubusercontent.com/42804316/57713910-63279100-7641-11e9-8816-68e9cca650ec.png">
 
  Figure 6 shows the detailed results for the CNN trained using a learning rate 0.001, a batch size of 50 and 10 epochs. Figure 7 shows the detailed results for the RNN trained using a learning rate of 0.001, a batch size of 50 and 10 epochs. 
 
-<img width="351" alt="Fig6_CNN" src="https://user-images.githubusercontent.com/42804316/57713941-6c186280-7641-11e9-9b9e-dae789553bcf.png"><img width="354" alt="Fig7_RNN" src="https://user-images.githubusercontent.com/42804316/57713945-6f135300-7641-11e9-97f0-0e25f77edbea.png">
+<img width="351" alt="Fig6_CNN" src="https://user-images.githubusercontent.com/42804316/57713941-6c186280-7641-11e9-9b9e-dae789553bcf.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="354" alt="Fig7_RNN" src="https://user-images.githubusercontent.com/42804316/57713945-6f135300-7641-11e9-97f0-0e25f77edbea.png">
