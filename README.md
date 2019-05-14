@@ -42,7 +42,7 @@ It consists of one input layer, two convolutional layers, one pooling layers, on
 
 The best RNN adopted GRU (gated recurrent units) cell. The number of units for each cell is 150, the time steps are 50, and the size of the input is 8. Then, the returned value from the last time step is fed into a dense layer to get the logits, which utilizes Tanh activation function. The obtained logits further go through the softmax activation function to get the 3 probability for each class. The highest probability corresponds to the predicted class. The cross entropy is used to compute the loss and the adam optimizer is used to optimize the parameters of the model.
 
-<img width="430" alt="tensorboard graph" src="https://user-images.githubusercontent.com/42804316/57712135-1abaa400-763e-11e9-9152-83c5e689e537.png"><img width="741" alt="simplified_flowchart" src="https://user-images.githubusercontent.com/42804316/57712157-25753900-763e-11e9-89fe-102befe6daa7.png"><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 3. Tensorboard Computational Graph (left) and Simplified Flowchart (right)
+<img width="45%" alt="tensorboard graph" src="https://user-images.githubusercontent.com/42804316/57712135-1abaa400-763e-11e9-9152-83c5e689e537.png"><img width="55%" alt="simplified_flowchart" src="https://user-images.githubusercontent.com/42804316/57712157-25753900-763e-11e9-89fe-102befe6daa7.png"><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fig 3. Tensorboard Computational Graph (left) and Simplified Flowchart (right)
 
 ## Results
 
