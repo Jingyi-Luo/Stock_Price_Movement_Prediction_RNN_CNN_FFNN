@@ -56,4 +56,4 @@ Figure 4 shows the details of the results for the metrics of random forests. The
 
  Figure 6 shows the detailed results for the CNN trained using a learning rate 0.001, a batch size of 50 and 10 epochs. Figure 7 shows the detailed results for the RNN trained using a learning rate of 0.001, a batch size of 50 and 10 epochs. 
 
-<img width="351" alt="Fig6_CNN" src="https://user-images.githubusercontent.com/42804316/57713941-6c186280-7641-11e9-9b9e-dae789553bcf.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="354" alt="Fig7_RNN" src="https://user-images.githubusercontent.com/42804316/57713945-6f135300-7641-11e9-97f0-0e25f77edbea.png">
+<img width="351" alt="Fig6_CNN" src="https://user-images.githubusercontent.com/42804316/57713941-6c186280-7641-11e9-9b9e-dae789553bcf.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="354" alt="Fig7_RNN" src="https://user-images.githubusercontent.com/42804316/57713945-6f135300-7641-11e9-97f0-0e25f77edbea.png">
